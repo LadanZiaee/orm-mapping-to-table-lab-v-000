@@ -29,7 +29,7 @@ class Student
     sql <<-SQL
       "INSERT INTO students (name, grade) VALUES (?,?,?) name, grade;" 
     SQL
-    @id = 
+    
   end
   
   def self.create(name:, grade:)
