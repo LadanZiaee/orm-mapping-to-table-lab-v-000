@@ -23,7 +23,7 @@ class Student
   
   def self.drop_table
     sql = self.create_table
-    DB[:conn].execute(sql)[0]
+    DB[:conn].execute(sql)
   end
   
   def save
