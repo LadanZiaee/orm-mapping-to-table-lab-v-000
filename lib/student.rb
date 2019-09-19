@@ -10,7 +10,7 @@ class Student
   end
   
   def self.create_table
-    sql <<-SQL 
+    sql <<- SQL 
       "CREATE TABLE IF NOT EXIST students (
         id INTEGER PRIMARY KEY, 
         name TEXT,
@@ -26,7 +26,7 @@ class Student
   end
   
   def save
-    sql <<-SQL
+    sql <<- SQL
       "INSERT INTO students (name, grade) VALUES (?,?,?) name, grade;" 
     SQL
     
